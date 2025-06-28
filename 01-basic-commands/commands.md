@@ -123,8 +123,9 @@ sort file.txt | uniq
 split -l 50 big.txt
 grep "error" log.txt
 egrep "warn|fail" log.txt
+## 🔧 Extended Commands
 
-| Command                                     | Description                      | Linux/macOS | Windows CMD                      |
+| Command | Description | Linux/macOS | Windows CMD |
 | ------------------------------------------- | -------------------------------- | ----------- | -------------------------------- |
 | `shuf file`                                 | Shuffle lines randomly           | ✅           | ❌                                |
 | `wc -l file`                                | Count number of lines in file    | ✅           | ❌                                |
