@@ -123,3 +123,44 @@ sort file.txt | uniq
 split -l 50 big.txt
 grep "error" log.txt
 egrep "warn|fail" log.txt
+
+| Command                                     | Description                      | Linux/macOS | Windows CMD                      |
+| ------------------------------------------- | -------------------------------- | ----------- | -------------------------------- |
+| `shuf file`                                 | Shuffle lines randomly           | ✅           | ❌                                |
+| `wc -l file`                                | Count number of lines in file    | ✅           | ❌                                |
+| `cmp fileA fileB`                           | Byte-by-byte file comparison     | ✅           | ❌                                |
+| `diff -u fileA fileB`                       | Show unified diff between files  | ✅           | ❌                                |
+| `find /path -name "<file>"`                 | Find files by name               | ✅           | ❌                                |
+| `updatedb`                                  | Update locate database           | ✅           | ❌                                |
+| `locate <file>`                             | Locate file using prebuilt index | ✅           | ❌                                |
+| `history \| grep sort`                      | Filter command history           | ✅           | ❌                                |
+| `help`                                      | Help for shell built-ins         | ✅           | ❌                                |
+| `man`                                       | Show manual page                 | ✅           | ❌                                |
+| `which`                                     | Show command path                | ✅           | ❌ Use `where`                    |
+| `alias`                                     | Create command shortcut          | ✅           | ❌                                |
+| `alias -p`                                  | List all aliases                 | ✅           | ❌                                |
+| `unalias`                                   | Remove alias                     | ✅           | ❌                                |
+| `bc`                                        | Calculator in terminal           | ✅           | ❌                                |
+| `cal`                                       | Show calendar                    | ✅           | ❌                                |
+| `uptime`                                    | Show system uptime               | ✅           | ❌                                |
+| `script`                                    | Record terminal session          | ✅           | ❌                                |
+| `printenv`                                  | Show environment variables       | ✅           | ❌                                |
+| `export VAR=value`                          | Set environment variable         | ✅           | ❌                                |
+| `source ~/.bash_profile`                    | Reload shell config              | ✅           | ❌                                |
+| `gzip -k file`                              | Compress file and keep original  | ✅           | ❌                                |
+| `gunzip file.gz`                            | Decompress gzip file             | ✅           | ❌                                |
+| `tar -czvf file.tar.gz x y`                 | Archive multiple files           | ✅           | ❌                                |
+| `zip myfile.zip x y`                        | Create zip archive               | ✅           | ❌ Use third-party tool           |
+| `unzip archive.zip`                         | Extract zip archive              | ✅           | ❌                                |
+| `wget -O file URL`                          | Download file from URL           | ✅           | ❌ Use `Invoke-WebRequest`        |
+| `curl -o file URL`                          | Download file with curl          | ✅           | ❌ Available in recent PowerShell |
+| `apt install pkg`                           | Install package (Debian/Ubuntu)  | ✅           | ❌                                |
+| `dnf install pkg`                           | Install package (Fedora/CentOS)  | ✅           | ❌                                |
+| `rpm -qa \| grep sql`                       | Search installed RPMs            | ✅           | ❌                                |
+| `dnf list installed`                        | List all installed packages      | ✅           | ❌                                |
+| `apt search pkg`                            | Search for package               | ✅           | ❌                                |
+| `systemctl start <service>`                 | Start a service                  | ✅           | ❌                                |
+| `systemctl list-units --type=service --all` | List all services                | ✅           | ❌                                |
+| `uname -a`                                  | Show system info                 | ✅           | ❌ Use `systeminfo`               |
+| `df -h`                                     | Show disk space usage            | ✅           | ❌ Use `wmic logicaldisk`         |
+| `free -h`                                   | Show memory usage                | ✅           | ❌ Use `systeminfo`               |
